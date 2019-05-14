@@ -15,7 +15,7 @@ class App extends React.Component {
 
   fetchUserInfo(code, secret){
     if(code && secret) {
-      axios.post("http://localhost:5000/user?code="+code+"&secret="+secret)
+      axios.post("https://react-oauth-test.herokuapp.com/user?code="+code+"&secret="+secret)
       .then(result => console.log(result.data))
       .catch(() => console.log("Can't access response. Blocked by browser?"))
     } else {
