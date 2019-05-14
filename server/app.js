@@ -14,6 +14,8 @@ const {
 // Enable sessions
 app.use(session());
 app.use(cors());
+
+// Import build directory to server
 app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.get('*', function(req, res){
