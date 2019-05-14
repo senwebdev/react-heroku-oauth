@@ -1,0 +1,28 @@
+{
+  "name": "react-heroku-oauth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "query-string": "^6.5.0",
+    "request": "^2.88.0",
+    "simple-oauth2": "^2.2.1",
+    "superagent": "^5.0.5"
+  },
+  "automatic": {
+    "clientId": "9515836f-5ea1-46ae-98cb-b54754291d54",
+    "site": "https://api.heroku.com",
+    "tokenPath": "/oauth/access_token",
+    "scope": ""
+  }
+}
